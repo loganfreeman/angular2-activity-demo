@@ -9,11 +9,24 @@ import { Activity }           from '../activity';
   selector: 'activity-item',
   template: `
   <div class="card">
-    <h4 class="card-title">{{activity.actor_name}}</h4>
+    <h4 class="card-title">{{activity.actor_description}}</h4>
+    <h5>
+      <img src="{{activity.actor_avator}}">
+      <a href="{{activity.actor_url}}">
+        <em>{{activity.actor_username}}</em> @ {{activity.provider}}
+      </a>
+    </h5>
+
+    <br>
+    <a href="{{activity.activity_attachment}}">Attachment</a>
   </div>
   `,
   directives: []
 })
 export class ActivityComponent {
   @Input() activity:Activity;
+
+  jsonStringify(activity:any){
+    return JSON.stringify(activity, null, 2);
+  }
 }

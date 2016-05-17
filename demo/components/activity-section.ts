@@ -31,7 +31,7 @@ let description = '';
     </div>
 
     <accordion [closeOthers]="oneAtATime">
-      <accordion-group *ngFor="let activity of activities" heading="{{activity.actor_description}}">
+      <accordion-group *ngFor="let activity of activities" heading="{{activity.actor_name}}">
         <activity-item  [activity]="activity"></activity-item>
       </accordion-group>
     </accordion>
