@@ -7,7 +7,10 @@ npm install
 PORT=9000 npm start
 ```
 
-`open localhost:9000` in browser
+
+### Steps
+- `open localhost:9000` in browser
+- click the button "load activities"
 
 
 Note
