@@ -3,6 +3,11 @@ import {CORE_DIRECTIVES} from '@angular/common';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 import {Ng2BootstrapConfig, Ng2BootstrapTheme} from 'ng2-bootstrap';
 
+import {ActivitySectionComponent} from './components/activity-section';
+
+import {HTTP_PROVIDERS} from '@angular/http';
+
+
 // todo: enable prod mod only for prod build
 // if (false) {
 enableProdMode();
@@ -36,6 +41,8 @@ let gettingStarted = require('./getting-started.md');
 
     <section id="getting-started">${gettingStarted}</section>
 
+    <activity-section></activity-section>
+
   </div>
 
   <footer class="footer">
@@ -46,11 +53,12 @@ let gettingStarted = require('./getting-started.md');
   </footer>
   `,
   directives: [
-    CORE_DIRECTIVES
+    CORE_DIRECTIVES,
+    ActivitySectionComponent
   ]
 })
 export class DemoComponent {
   public isBs3:boolean = Ng2BootstrapConfig.theme === Ng2BootstrapTheme.BS3;
 }
 
-bootstrap(DemoComponent);
+bootstrap(DemoComponent, [HTTP_PROVIDERS]);

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "my angular2 project",
   "main": "index.js",
-  "license": "MIT",
+  "license": "ISC",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",
     "flow.compile": "npm run flow.install:typings && npm run flow.compile:common",
@@ -27,8 +27,8 @@
     "test": "NODE_ENV=test ./node_modules/.bin/karma start"
   },
   "author": "",
-  "license": "ISC",
   "dependencies": {
+    "@angular/http": "^2.0.0-rc.1",
     "moment": "2.13.0"
   },
   "peerDependencies": {
