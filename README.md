@@ -4,5 +4,7 @@ Instructions
 sudo npm install npm -g
 sudo npm install -g typescript
 npm install
-npm start
+PORT=9000 npm start
 ```
+
+`open localhost:9000` in browser
