@@ -17,8 +17,7 @@ export class ActivityService {
     if (res.status < 200 || res.status >= 300) {
       throw new Error('Response status: ' + res.status);
     }
-    let body = res.json();
-    return body.data || { };
+    return res.json();
   }
   private handleError (error: any) {
     // In a real world app, we might use a remote logging infrastructure
