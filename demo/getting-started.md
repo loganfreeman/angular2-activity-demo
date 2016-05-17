@@ -1,31 +1,24 @@
-# Getting started
+Getting Started
+---
+Your project is to write a browser UI that displays these activities and allows you to interact with the "actors" of these activities, such as liking or replying to these "actors".
 
-### First of all, Welcome!
+https://nuvi-challenge.herokuapp.com/activities
 
-**80%** of baseline functionality is ready in Angular2
+We have a RESTful JSON endpoint for data. It will always return an array of objects which describe the activity. This array could be empty but will typically include 10-500 social media activities.
 
-### Dependencies
-This module consists of native Angular2 components and directives, no jQuery or Bootstrap javascript is required.
 
-*datepicker*: requires moment for data parsing, until Intl polyfill will be implemented
+Analysts using our product typically need to know what social media “provider’ it is from (e.g. Twitter, Facebook, Instagram, Reddit), the username on that social media site, the content of the activity, including media, and when it was posted. Other meta data included in the activity is useful as well to represent but we also care about keeping a clean UI.
 
-Always actual list of JS dependencies you can find [here](https://david-dm.org/valor-software/ng2-bootstrap)
 
-Plus this module plays nice with Bootstrap CSS [v3](http://getbootstrap.com/css/) and [v4](http://v4-alpha.getbootstrap.com)
+Once you’ve built this UI in JavaScript, commit it to a GitHub repo and send it our way. If it requires a build, please commit the built javascript as well and include a README.md if there are some special steps on how see the html and javascript.
 
-*Note* later on each component will be available independently via npm, jspm, etc.
 
-### Installation
+Bonus
+---
 
-Currently preferable way to install this module is `npm`:
+Social Media Analysts use our product to take action on large quantities of activities and take actionable insights on them. Build a visualization that allows them to understand better how social media conversations about their brand are going, using the data provided.
 
-```bash
-npm install --save ng2-bootstrap
-```
+Bonus Bonus
+---
 
-Have fun!
-
-### Reading documentation
-
-Each `ng2-bootstrap` component has api and annotation docs, examples and working demo. Each `property` and `event` has type annotation and default value if any.
-
+Manually write an HTTP request to get the JSON data at the endpoint in a plain text file, include the cookie “SESSION” with the value of “NUVI-12345” and commit it as “request.txt”.

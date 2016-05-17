@@ -13,6 +13,7 @@ if (w && w.__theme === 'bs4') {
   Ng2BootstrapConfig.theme = Ng2BootstrapTheme.BS4;
 }
 
+let gettingStarted = require('./getting-started.md');
 
 @Component({
   selector: 'app',
@@ -33,7 +34,7 @@ if (w && w.__theme === 'bs4') {
     <h1 id="overview" class="page-header">
     </h1>
 
-
+    <section id="getting-started">${gettingStarted}</section>
 
   </div>
 
