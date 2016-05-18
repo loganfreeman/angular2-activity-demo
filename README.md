@@ -20,7 +20,13 @@ Steps
 - `open localhost:9000` in browser
 - click the button "load activities"
 
+Heroku
+---
+```
+web: node server.js
+```
 
+[Heroku](https://hidden-hollows-37818.herokuapp.com/)
 Note
 ---
 implemented using: 
