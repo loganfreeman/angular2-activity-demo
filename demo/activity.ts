@@ -1,20 +1,20 @@
 export class Activity {
-  id: number;
-  actor_username: string;
-  actor_description: string;
-  actor_name: string;
-  actor_avator: string;
-  actor_url: string;
-  provider: string;
-  activity_url: string;
-  activity_latitude: number;
-  activity_longitude: number;
-  activity_date: Date;
-  activity_message: string;
-  activity_likes: number;
-  activity_shares: number;
-  activity_comments: number;
-  activity_attachment: string;
-  activity_attachment_type: string;
-  activity_sentiment: number
+  public id: number;
+  public actor_username: string;
+  public actor_description: string;
+  public actor_name: string;
+  public actor_avator: string;
+  public actor_url: string;
+  public provider: string;
+  public activity_url: string;
+  public activity_latitude: number;
+  public activity_longitude: number;
+  public activity_date: Date;
+  public activity_message: string;
+  public activity_likes: number;
+  public activity_shares: number;
+  public activity_comments: number;
+  public activity_attachment: string;
+  public activity_attachment_type: string;
+  public activity_sentiment: number
 }

@@ -1,7 +1,4 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {CORE_DIRECTIVES} from '@angular/common';
-
-import {TAB_DIRECTIVES, BUTTON_DIRECTIVES} from 'ng2-bootstrap';
+import {Component, Input} from '@angular/core';
 
 import { Activity }           from '../activity';
 
@@ -24,9 +21,5 @@ import { Activity }           from '../activity';
   directives: []
 })
 export class ActivityComponent {
-  @Input() activity:Activity;
-
-  jsonStringify(activity:any){
-    return JSON.stringify(activity, null, 2);
-  }
+  @Input() public activity:Activity;
 }

@@ -8,7 +8,7 @@ import 'rxjs/Rx';
 export class ActivityService {
   constructor (private http: Http) {}
   private activitiesUrl = 'https://nuvi-challenge.herokuapp.com/activities';  // URL to web API
-  getActivities (): Observable<Activity[]> {
+  public getActivities (): Observable<Activity[]> {
     return this.http.get(this.activitiesUrl)
                     .map(this.extractData)
                     .catch(this.handleError);
