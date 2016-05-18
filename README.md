@@ -7,6 +7,13 @@ npm install
 PORT=9000 npm start
 ```
 
+Build production
+---
+```shell
+npm run flow.build:prod
+cd demo-build
+```
+The production version will be inside demo-build directory
 
 Steps
 ---
