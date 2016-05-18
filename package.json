@@ -22,7 +22,8 @@
     "flow.serve:prod": "NODE_ENV=production ./node_modules/.bin/webpack-dev-server --hot --inline --colors --display-error-details --display-cached",
     "start": "npm run flow.serve:dev",
     "pretest": "npm run flow.lint",
-    "test": "NODE_ENV=test ./node_modules/.bin/karma start"
+    "test": "NODE_ENV=test ./node_modules/.bin/karma start",
+    "postinstall": "typings install"
   },
   "author": "",
   "dependencies": {
