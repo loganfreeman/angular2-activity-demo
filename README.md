@@ -15,9 +15,16 @@ PORT=9000 npm start
 
 Note
 ---
-implemented using angular2, ng2-bootstrap, ng2-charts
+implemented using [angular2](https://angular.io/), [ng2-bootstrap](http://valor-software.com/ng2-bootstrap/), [ng2-charts](http://valor-software.com/ng2-charts/)
 
 
 Chart
 ---
+```html
+    <base-chart class="chart" *ngIf="graphVisible"
+               [data]="chartData"
+               [labels]="chartLabels"
+               [chartType]="chartType">
+    </base-chart>
+```
 ![Bar Chart](bar-chart.png)
