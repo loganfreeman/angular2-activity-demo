@@ -15,4 +15,9 @@ PORT=9000 npm start
 
 Note
 ---
-implemented using angular2, ng2-bootstrap
+implemented using angular2, ng2-bootstrap, ng2-charts
+
+
+Chart
+---
+![Bar Chart](bar-chart.png)
