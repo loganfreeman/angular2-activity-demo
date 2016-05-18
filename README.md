@@ -26,7 +26,7 @@ Heroku
 web: node server.js
 ```
 
-[Heroku](https://hidden-hollows-37818.herokuapp.com/)
+[demo @ Heroku](https://hidden-hollows-37818.herokuapp.com/)
 Note
 ---
 implemented using: 
