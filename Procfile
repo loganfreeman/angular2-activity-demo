@@ -1,1 +1,1 @@
-web: npm run flow.serve:prod
+web: node server.js
