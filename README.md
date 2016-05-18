@@ -8,14 +8,18 @@ PORT=9000 npm start
 ```
 
 
-### Steps
+Steps
+---
 - `open localhost:9000` in browser
 - click the button "load activities"
 
 
 Note
 ---
-implemented using [angular2](https://angular.io/), [ng2-bootstrap](http://valor-software.com/ng2-bootstrap/), [ng2-charts](http://valor-software.com/ng2-charts/)
+implemented using: 
+- [angular2](https://angular.io/)
+- [ng2-bootstrap](http://valor-software.com/ng2-bootstrap/)
+- [ng2-charts](http://valor-software.com/ng2-charts/)
 
 
 Chart
